@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visual Learning Program</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        margin: 50px;
+      }
+
+      h1 {
+        color: #0077cc;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .orange-container {
+        background-color: #ffb74d;
+        color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .collapse-button {
+        margin-bottom: 10px;
+      }
+
+      .btn-danger {
+        background-color: #ffb74d;
+        border-color: #ffb74d;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation-->
+    {% include "header.html"%}
+
+    <div class="container">
+      <h1>Hello Visual Voyager! 🚀👀</h1>
+      <p>
+        Did you know? About 65% of people, including you, are visual learners!
+        Visual learners, also known as spatial learners, absorb information best
+        through visual aids.
+      </p>
+      <p>
+        You're fantastic at map reading, assembling furniture with ease when
+        given diagrams, and you thrive in meetings with whiteboards. Doodling
+        and color coordination are your signature moves.
+      </p>
+      <p>
+        Your keen sense of style and spatial orientation often lead you to
+        creative fields like design, photography, and architecture. Embrace your
+        visual superpower!
+      </p>
+    </div>
+
+    <div class="container">
+      <p>
+        Embark on a visual odyssey with this tailor-made program for you, the
+        visual maestro:
+      </p>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sketchScribeCollapse"
+          aria-expanded="false"
+          aria-controls="sketchScribeCollapse"
+        >
+          Sketch & Scribe - Your Note-Taking Canvas! ✏️🎨
+        </button>
+      </div>
+
+      <div class="collapse" id="sketchScribeCollapse">
+        <div class="orange-container">
+          <p>
+            Grab your pens and unleash your creativity! Turn your notes into a
+            masterpiece of visuals and doodles. Your notebook is your canvas,
+            and you're the artist! 🖌️📔
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#lectureSerenadeCollapse"
+          aria-expanded="false"
+          aria-controls="lectureSerenadeCollapse"
+        >
+          Picture Perfect - Infuse Your Notes! 📸🌈
+        </button>
+      </div>
+
+      <div class="collapse" id="lectureSerenadeCollapse">
+        <div class="orange-container">
+          <p>
+            Spice up your notes with visuals! Add diagrams, charts, and pictures
+            to create a kaleidoscope of knowledge. It's like turning your notes
+            into a graphic novel – because learning should be an adventure! 🚀📸
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flashcardSymphonyCollapse"
+          aria-expanded="false"
+          aria-controls="flashcardSymphonyCollapse"
+        >
+          Flashback Fiesta - Revise in Living Color! 🌈🔄
+        </button>
+      </div>
+
+      <div class="collapse" id="flashcardSymphonyCollapse">
+        <div class="orange-container">
+          <p>
+            Dive into a world of vibrant revision! Right after class, revisit
+            your notes and let the colors of understanding pop! It's like a
+            flashback party for your brain. 🎉🧠
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pomodoroSonataCollapse"
+          aria-expanded="false"
+          aria-controls="pomodoroSonataCollapse"
+        >
+          Read & See - 25 Minutes of Visual Bliss! 📖👀
+        </button>
+      </div>
+
+      <div class="collapse" id="pomodoroSonataCollapse">
+        <div class="orange-container">
+          <p>
+            Time to immerse yourself in the visual wonderland of your
+            assignments! Read for 25 minutes, and let your eyes dance through
+            the pages. Imagine the information unfolding like scenes in a movie!
+            🎬👁️
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#repeatTheRhythmCollapse"
+          aria-expanded="false"
+          aria-controls="repeatTheRhythmCollapse"
+        >
+          Pomodoro Picnic - Breaks with a View! 🍅🏞️
+        </button>
+      </div>
+
+      <div class="collapse" id="repeatTheRhythmCollapse">
+        <div class="orange-container">
+          <p>
+            Pomodoro breaks are your ticket to a visual escape! After 25
+            minutes, take a break – gaze out the window, stretch, let your eyes
+            feast on the world. Then, back to the visual feast of learning! 🌍🍅
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#reviewRhymeCollapse"
+          aria-expanded="false"
+          aria-controls="reviewRhymeCollapse"
+        >
+          Review & Revel - Your Visual Recap! 🎉👓
+        </button>
+      </div>
+
+      <div class="collapse" id="reviewRhymeCollapse">
+        <div class="orange-container">
+          <p>
+            Before you bid adieu to your study session, indulge in a visual
+            review! Scan through your highlighted material like you're savoring
+            the best parts of a movie. A visual recap for the win! 🎥👏
+          </p>
+          <p>
+            Get ready to paint the canvas of your mind with vivid knowledge!
+            With this program, your learning journey will be a visual spectacle
+            – enjoy the show! 🚀🎨📚
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    {%include "footer.html"%}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

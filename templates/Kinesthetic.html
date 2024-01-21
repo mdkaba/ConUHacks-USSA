@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kinesthetic Learning Program</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        margin: 50px;
+      }
+
+      h1 {
+        color: #0077cc;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+      .red-container,
+      .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .collapse-button {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation-->
+    {% include "header.html"%}
+    <div class="container">
+      <h1>Hey, Kinesthetic Dynamo! 🕺💡</h1>
+      <p>
+        Kinesthetic Learners a unique bunch, making up just 5 percent of the
+        population.
+      </p>
+      <p>
+        You know, you're the ones who might be shuffling and fidgeting during
+        presentations or feeling a bit antsy in those lengthy meetings.
+      </p>
+      <p>
+        Traditional learning methods, like lectures and conferences, can be a
+        bit of a challenge for you.
+      </p>
+      <p>
+        Why? Well, your mind doesn't easily connect with just sitting and
+        listening or observing.
+      </p>
+      <p>
+        It craves action, movement, and hands-on experiences to truly grasp and
+        remember information.
+      </p>
+      <p>
+        You're the doers, the ones who need to get up and get involved for
+        things to stick in your memory.
+      </p>
+      <p>
+        So, embrace that need for movement, and let your kinesthetic superpower
+        shine!
+      </p>
+    </div>
+
+    <div class="red-container">
+      <p>
+        Get ready to dive into the world of hands-on learning with this
+        kinesthetic-inspired program crafted just for you:
+      </p>
+
+      <div class="collapse-button">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#groupGrooveCollapse"
+          aria-expanded="false"
+          aria-controls="groupGrooveCollapse"
+        >
+          Group Groove - Study Jam Session! 🎵👥
+        </button>
+      </div>
+
+      <div class="collapse center" id="groupGrooveCollapse">
+        <div class="red-container">
+          <p>
+            Round up your study squad and turn your sessions into a learning
+            jam! Find someone who listens and helps jog your memory. It's like a
+            study dance where movement sparks memory! 💃👯‍♂️
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flashcardTangoCollapse"
+          aria-expanded="false"
+          aria-controls="flashcardTangoCollapse"
+        >
+          Flashcard Tango - Move and Memorize! 💃🃏
+        </button>
+      </div>
+
+      <div class="collapse" id="flashcardTangoCollapse">
+        <div class="red-container">
+          <p>
+            Time to dance with your notes! Turn them into flashcards and let the
+            memorization tango begin. Move those cards around – it's not just
+            learning; it's a kinesthetic performance! 🕺📇
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mnemonicBalletCollapse"
+          aria-expanded="false"
+          aria-controls="mnemonicBalletCollapse"
+        >
+          Mnemonic Ballet - Dance of Memory! 🩰🧠
+        </button>
+      </div>
+
+      <div class="collapse" id="mnemonicBalletCollapse">
+        <div class="red-container">
+          <p>
+            Let's choreograph a mnemonic ballet! Tie lessons to simple,
+            memorable cues. It's like creating a dance routine for your brain –
+            smooth moves for smoother recall during exams! 💭💃
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#standUpSymphonyCollapse"
+          aria-expanded="false"
+          aria-controls="standUpSymphonyCollapse"
+        >
+          Stand-Up Symphony - Elevate Your Learning! 🎻📚
+        </button>
+      </div>
+
+      <div class="collapse" id="standUpSymphonyCollapse">
+        <div class="red-container">
+          <p>
+            No more sitting still – it's time for a stand-up symphony! Elevate
+            your learning by standing up. Invest in a book stand or a standing
+            desk to keep your body engaged and your mind connected. It's a
+            kinetic experience for enhanced concentration and retention! 📖🚶‍♂️
+          </p>
+          <p>
+            With this program, your learning journey becomes a dance floor of
+            knowledge. Move, groove, and let your kinesthetic spirit shine as
+            you master your studies! 🚀🕺📚
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    {%include "footer.html"%}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

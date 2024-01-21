@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation-->
+    {% include "header.html"%}
+
+    <!--  Intro  -->
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="/assets/USSA.png"
+        alt="USSA logo"
+        width="72"
+        height="57"
+      />
+      <h1 class="display-5 fw-bold text-body-emphasis">Welcome to USSA</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          At USSA, we're transforming learning by making it personal. Our Smart
+          Study Assistant tailors study materials to your unique learning
+          style—whether you're a visual, auditory, or kinesthetic learner. If
+          you're unsure, our user-friendly questionnaire guides you. No more
+          generic approaches; USSA ensures education is not only effective but
+          also enjoyable. Discover your full learning potential with USSA!
+        </p>
+      </div>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="{{url_for('test_data')}}"
+        ><button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+          Take our learning method test now!
+        </button></a
+      >
+    </div>
+
+    <!--  Newsletter subscribe  -->
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+            Our free 12-month newsletters
+          </h1>
+          <p class="col-lg-10 fs-4">
+            Our 12-month customized newsletter just for you
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form
+            action="/newsletter_success"
+            method="post"
+            class="p-4 p-md-5 border rounded-3 bg-body-tertiary"
+          >
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">
+              Subscribe
+            </button>
+            <hr class="my-4" />
+            <small class="text-body-secondary"
+              >By clicking Subscribe, you agree to the terms of use.</small
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-->
+    {%include "footer.html"%}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

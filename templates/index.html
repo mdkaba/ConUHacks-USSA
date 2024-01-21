@@ -1,0 +1,193 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="/login" method="post">-->
+<!--        <label>Name</label>-->
+<!--        <input type="text" placeholder="name" name="username">-->
+<!--        <label>Password</label>-->
+<!--        <input type="text" placeholder="password" name="password">-->
+<!--        <button type="submit">Ok</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Smart Study Assistant (USSA) - Learning Style Analyzer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation-->
+    {% include "header.html"%}
+
+    <div class="container">
+      <!-- Learning Style Questionnaire -->
+      <div id="learningStyleSection">
+        <h3 class="mb-3">Learning Style Questionnaire</h3>
+        <form action="/result" method="post" id="learningStyleForm">
+          <!-- Add your questionnaire input fields here -->
+          <div class="form-group">
+            <label
+              >1. How would you describe your preferred learning style when it
+              comes to understanding complex information?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q1"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >2. When studying, what type of materials do you find most
+              effective for comprehension?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q2"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >3. In a group learning setting, what do you believe enhances your
+              understanding the most?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q3"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >4. When faced with a challenging concept, which approach do you
+              naturally lean towards?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q4"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >5. Reflecting on past successful learning experiences, what
+              elements were present in the method that worked best for
+              you?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q5"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >6. When preparing for an exam, what study techniques do you find
+              most effective for long-term retention?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q6"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >7. In a classroom setting, what type of instructional methods do
+              you feel most engaged with?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q7"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >8. When trying to remember information, which strategy do you
+              intuitively use?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q8"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >9. When collaborating with others on a project, which
+              communication style do you find most effective for your
+              learning?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q9"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              >10. Reflecting on your overall learning experiences, which style
+              do you believe has been the most impactful for your academic
+              success?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="q10"
+              placeholder="Enter your preference"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+      </div>
+
+      <!-- User Profile and Progress Tracking Section -->
+      <div id="profileSection" style="display: none">
+        <h3 class="mb-3">User Profile</h3>
+        <p id="welcomeMessage"></p>
+        <p>Learning Style History:</p>
+        <ul id="progressList"></ul>
+      </div>
+    </div>
+
+    <!-- Footer-->
+    {%include "footer.html"%}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

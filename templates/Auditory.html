@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auditory Learning Program</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        margin: 50px;
+      }
+
+      h1 {
+        color: #0077cc;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .red-container,
+      .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+
+      .blue-container {
+        background-color: #3498db;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .collapse-button {
+        margin-bottom: 10px;
+      }
+
+      .btn-danger {
+        background-color: #3498db;
+        border-color: #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation-->
+    {% include "header.html"%}
+    <div class="container">
+      <h1>Hello, Auditory Virtuoso! 🎧🎤</h1>
+      <p>
+        Hello auditory learner! Did you know you're part of the 30% of the
+        population that learns best through hearing? In lectures or
+        conversations, you thrive, remembering up to 75% of what you hear.
+      </p>
+      <p>
+        A word of caution: if you're in a disagreement with an auditory learner,
+        they'll recall every detail of the conversation.
+      </p>
+      <p>
+        Your ears are your superpower for learning and remembering through the
+        power of sound!
+      </p>
+    </div>
+
+    <div class="red-container center">
+      <p>
+        Get ready to turn up the volume on your study sessions with this
+        auditory-centric program designed just for you:
+      </p>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#groupGrooveCollapse"
+          aria-expanded="false"
+          aria-controls="groupGrooveCollapse"
+        >
+          Chatty Study Sessions - Group Up! 🗣️👥
+        </button>
+      </div>
+
+      <div class="collapse" id="groupGrooveCollapse">
+        <div class="blue-container">
+          <p>
+            Time to rally your study crew! Join a group where discussions flow
+            like a river. Talk out loud, share ideas, and let the auditory vibes
+            fuel your learning. It's like hosting your very own study podcast!
+            🎙️💬
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#lectureSerenadeCollapse"
+          aria-expanded="false"
+          aria-controls="lectureSerenadeCollapse"
+        >
+          Lecture Serenade - Tape and Tune In! 🎤📼
+        </button>
+      </div>
+
+      <div class="collapse" id="lectureSerenadeCollapse">
+        <div class="blue-container">
+          <p>
+            Hit the record button and let the lecture serenade begin! Tape your
+            lectures and dive into a double dose of auditory goodness. Review
+            your notes while listening – it's like creating your personal study
+            soundtrack! 📼🎵
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flashcardSymphonyCollapse"
+          aria-expanded="false"
+          aria-controls="flashcardSymphonyCollapse"
+        >
+          Flashcard Symphony - Auditory Review! 🎶📇
+        </button>
+      </div>
+
+      <div class="collapse" id="flashcardSymphonyCollapse">
+        <div class="blue-container">
+          <p>
+            Turn your notes into a symphony of flashcards! Carry them wherever
+            you go and review aloud. Your auditory senses will dance with joy as
+            you play the notes of knowledge like a melodic masterpiece! 🎹📚
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pomodoroSonataCollapse"
+          aria-expanded="false"
+          aria-controls="pomodoroSonataCollapse"
+        >
+          Pomodoro Sonata - Break in Harmony! 🍅🎶
+        </button>
+      </div>
+
+      <div class="collapse" id="pomodoroSonataCollapse">
+        <div class="blue-container">
+          <p>
+            Let the Pomodoro Technique orchestrate your study sessions. After 25
+            minutes, take a harmonious break – walk, stretch, let the notes
+            linger in the air. Then, return to your auditory study session with
+            refreshed ears! 🕰️🍅
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#repeatTheRhythmCollapse"
+          aria-expanded="false"
+          aria-controls="repeatTheRhythmCollapse"
+        >
+          Repeat the Rhythm - 25-Minute Encore! 🔄🎵
+        </button>
+      </div>
+
+      <div class="collapse" id="repeatTheRhythmCollapse">
+        <div class="blue-container">
+          <p>
+            Hit replay and go for another round! Read for 25 minutes, take a
+            melodic break, and review those highlighted notes. It's like an
+            encore performance for your auditory learning journey! 🎤🔄
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse-button center">
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#reviewRhymeCollapse"
+          aria-expanded="false"
+          aria-controls="reviewRhymeCollapse"
+        >
+          Review Rhyme - Vocal Recap! 🗣️🎶
+        </button>
+      </div>
+
+      <div class="collapse" id="reviewRhymeCollapse">
+        <div class="blue-container">
+          <p>
+            Before the final curtain falls, give a vocal recap! Review all your
+            underlined material aloud, and if you've got notes, let them sing
+            too. It's a rhythmical review for a melodious memory boost! 🎤📖
+          </p>
+          <p>
+            Get ready to study in harmony, Auditory Maestro! With this program,
+            your learning journey will be a symphony of knowledge. Tune in and
+            let the auditory adventure begin!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    {%include "footer.html"%}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
