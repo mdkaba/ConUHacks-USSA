@@ -1,1 +1,1 @@
-# ConUHacksUSSA
+# ConUHacks USSA
